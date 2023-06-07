@@ -1,0 +1,59 @@
+
+@media (max-width: 768px) {
+    .header {
+
+    }
+
+    .info {
+        &-title  {
+            font-size: 40px;
+        }
+    }
+    .todo {
+        padding-top: 100px;
+        &-content {
+
+        }
+        &-form {
+        }
+        &__input {
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+
+    }
+
+    .info {
+        &-title  {
+            font-size: 35px;
+        }
+        &-text {
+            font-size: 20px;
+        }
+    }
+
+    .todo {
+        padding-top: 100px;
+        &-content {
+
+        }
+        &-form {
+            display: flex;
+            flex-direction: column;
+            &__input {
+                margin-top: 4px;
+                margin-right: 0px;
+            }
+            &__date {
+                padding-top: 10px;
+            }
+        }
+    }
+    button {
+        margin-top: 20px;
+        margin-left: 0px;
+    }
+}

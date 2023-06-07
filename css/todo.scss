@@ -1,0 +1,50 @@
+.todo {
+    padding-top: 150px;
+    margin-bottom: 100px;
+    &-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &-logo {
+        font-size: 40px;
+        border-bottom: 2px solid #7fd5dc;
+    }
+    &-form {
+        padding-top: 50px;
+        margin-bottom: 40px;
+        &__task {
+
+        }
+        &__input {
+            border-radius: 30px;
+            padding: 5px;
+            border: 1px solid black;
+            margin-right: 20px;
+        }
+        &__button {
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+    }
+    &-completed {
+        font-size: 28px;
+        padding-top: 80px;
+        margin-bottom: 20px;
+        border-bottom: 2px solid orange;
+    }
+    &-coTasks {
+        li {
+            padding-top: 15px;
+            font-size: 22px;
+            &:before {
+                content: '✔';
+                margin-right: 5px;
+            }
+        }
+    }
+}

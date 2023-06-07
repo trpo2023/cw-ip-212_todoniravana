@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link type="image/x-icon" href="img/logo.svg" rel="shortcut icon">
+    <title>ToDo Nirvana</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <header class="header">
+            <div class="container">
+                <div class="header-content">
+                    <div class="header-logo">
+                        <div class="header-logo__img"></div>
+                        <div class="header-logo__text">Todo Nirvana</div>
+                    </div>
+
+                    <div class="header-burger">
+                        <span></span>
+                    </div>
+
+                    <nav class="header-nav">
+                        <a class="header-item" href="">item1</a>
+                        <a class="header-item" href="">item2</a>
+                        <a class="header-item" href="">item3</a>
+                        <a class="header-item" href="">item4</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <div class="container">
+                <section class="info">
+                    <div class="info-content">
+                        <div class="info-title">Организуйте работу и жизнь.</div>
+                        <div class="info-text">Todo Nirvana – список дел и таск-менеджер № 1 в мире. Он поможет вам обрести концентрацию, организованность и покой.</div>
+                    </div>
+                </section>
+
+                <section class="todo">
+                    <div class="todo-content">
+                        <h1 class="todo-logo">Список дел</h1>
+                        <form class="todo-form">
+                            <label for="task" class="todo-form__task">Задача:</label>
+                            <input type="text" id="task" name="task" class="todo-form__input">
+                            <label for="date" class="todo-form__date">Дедлайн:</label>
+                            <input type="date" id="date" name="date" class="todo-form__input">
+                            <button type="submit" class="todo-form__button">Добавить</button>
+                        </form>
+                        <ul id="taskList"></ul>
+                        <h2 class="todo-completed">Выполненные</h2>
+                        <ul id="completedTasks" class="todo-coTasks"></ul>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-text">Не знаю что написать в футере</div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

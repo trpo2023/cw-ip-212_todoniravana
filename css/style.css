@@ -1,0 +1,267 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+body {
+  font-family: "Mukta", sans-serif;
+  font-size: 20px; }
+
+.wrapper {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 15px; }
+
+button {
+  padding: 5px;
+  border-radius: 20px;
+  border: 1px solid black;
+  background-color: #fff;
+  margin-left: 9px; }
+
+.header {
+  border-bottom: 1px solid #7fd5dc;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  background-color: #fff; }
+  .header:before {
+    content: '';
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; }
+  .header-content {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 60px; }
+  .header-burger {
+    display: none; }
+  .header-logo {
+    position: relative;
+    z-index: 3;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .header-logo__img {
+      background-image: url("../img/logo.svg");
+      width: 50px;
+      height: 50px; }
+    .header-logo__text {
+      font-size: 22px; }
+  .header-nav {
+    position: relative;
+    z-index: 3; }
+  .header-item {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    padding: 5px;
+    margin-left: 30px;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    border-radius: 10px; }
+    .header-item:hover {
+      background-color: #cadae5; }
+
+.main {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding-top: 170px; }
+
+.info {
+  margin: 0 auto;
+  max-width: 430px;
+  padding: 40px;
+  border: 2px solid orange; }
+  .info-title {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px; }
+  .info-text {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px; }
+
+.todo {
+  padding-top: 150px;
+  margin-bottom: 100px; }
+  .todo-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .todo-logo {
+    font-size: 40px;
+    border-bottom: 2px solid #7fd5dc; }
+  .todo-form {
+    padding-top: 50px;
+    margin-bottom: 40px; }
+    .todo-form__input {
+      border-radius: 30px;
+      padding: 5px;
+      border: 1px solid black;
+      margin-right: 20px; }
+    .todo-form__button {
+      background-color: #fff;
+      border-radius: 20px;
+      padding: 5px;
+      border: 1px solid black; }
+  .todo-completed {
+    font-size: 28px;
+    padding-top: 80px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid orange; }
+  .todo-coTasks li {
+    padding-top: 15px;
+    font-size: 22px; }
+    .todo-coTasks li:before {
+      content: '✔';
+      margin-right: 5px; }
+
+.footer {
+  height: 80px;
+  background: #eccfba;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #eec4aa, #aeb5e3);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#d7bcad), to(#b6bdea));
+  background: -webkit-linear-gradient(left, #d7bcad, #b6bdea);
+  background: -o-linear-gradient(left, #d7bcad, #b6bdea);
+  background: linear-gradient(to right, #d7bcad, #b6bdea);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+@media (max-width: 767px) {
+  .header-burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3; }
+    .header-burger span {
+      position: absolute;
+      background-color: black;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      top: 9px;
+      -webkit-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s; }
+    .header-burger:before, .header-burger:after {
+      content: '';
+      background-color: black;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      -webkit-transition: all 0.3s ease 0s;
+      -o-transition: all 0.3s ease 0s;
+      transition: all 0.3s ease 0s; }
+    .header-burger:before {
+      top: 0; }
+    .header-burger:after {
+      bottom: 0; }
+    .header-burger.active:before {
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      top: 9px; }
+    .header-burger.active:after {
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      bottom: 9px; }
+    .header-burger.active span {
+      -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+      transform: scale(0); }
+  .header-nav {
+    position: fixed;
+    top: 0;
+    left: 200%;
+    width: 100%;
+    height: 100%;
+    background-color: #f8f5f5;
+    padding: 120px 15px 20px 15px;
+    z-index: 2;
+    -webkit-transition: all 0.6s ease 0s;
+    -o-transition: all 0.6s ease 0s;
+    transition: all 0.6s ease 0s; }
+    .header-nav.active {
+      left: 0; }
+  .header-item {
+    display: block;
+    margin-bottom: 35px; } }
+
+@media (max-width: 768px) {
+  .info-title {
+    font-size: 40px; }
+  .todo {
+    padding-top: 100px; } }
+
+@media (max-width: 480px) {
+  .info-title {
+    font-size: 35px; }
+  .info-text {
+    font-size: 20px; }
+  .todo {
+    padding-top: 100px; }
+    .todo-form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; }
+      .todo-form__input {
+        margin-top: 4px;
+        margin-right: 0px; }
+      .todo-form__date {
+        padding-top: 10px; }
+  button {
+    margin-top: 20px;
+    margin-left: 0px; } }
